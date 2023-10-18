@@ -5,10 +5,6 @@ import (
 	"fmt"
 )
 
-type Item struct {
-	Value int
-}
-
 type H []int
 
 func (h H) Len() int {
@@ -35,7 +31,7 @@ func (h *H) Pop() interface{} {
 	return x
 }
 
-func theap() {
+func curHeap() {
 	h := &H{}
 	heap.Init(h)
 	heap.Push(h, 3)
