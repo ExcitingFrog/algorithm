@@ -1,4 +1,4 @@
-package redblacktree
+package utils
 
 import (
 	"fmt"
