@@ -1,6 +1,6 @@
 package leetcode
 
-func maxProduct(words []string) int {
+func MaxProduct(words []string) int {
 	mask := make([]int, len(words))
 	for i := range mask {
 		for _, b := range words[i] {
