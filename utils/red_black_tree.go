@@ -11,7 +11,7 @@ type pair struct {
 	Value int
 }
 
-func tree() {
+func RedBlackTree() {
 	trees := redblacktree.NewWith(func(a, b interface{}) int {
 		return a.(pair).Value - b.(pair).Value
 	})

@@ -31,7 +31,7 @@ func (h *H) Pop() interface{} {
 	return x
 }
 
-func curHeap() {
+func Heap() {
 	h := &H{}
 	heap.Init(h)
 	heap.Push(h, 3)

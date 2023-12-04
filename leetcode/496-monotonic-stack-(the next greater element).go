@@ -1,6 +1,6 @@
 package leetcode
 
-func nextGreaterElement(nums1 []int, nums2 []int) []int {
+func NextGreaterElement(nums1 []int, nums2 []int) []int {
 	stack := []int{}
 	nxt := map[int]int{}
 	for i := len(nums2) - 1; i >= 0; i-- {
