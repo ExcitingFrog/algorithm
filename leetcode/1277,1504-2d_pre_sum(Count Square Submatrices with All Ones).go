@@ -1,6 +1,6 @@
 package leetcode
 
-func countSquares(matrix [][]int) int {
+func CountSquares(matrix [][]int) int {
 	m, n := len(matrix), len(matrix[0])
 	d := make([][]int, m+1)
 	for i := range d {
@@ -27,7 +27,7 @@ func countSquares(matrix [][]int) int {
 	return res
 }
 
-func numSubmat(mat [][]int) int {
+func NumSubmat(mat [][]int) int {
 	m, n := len(mat), len(mat[0])
 	d := make([][]int, m+1)
 	for i := range d {
