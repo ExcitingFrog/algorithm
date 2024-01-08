@@ -2,6 +2,7 @@ package search
 
 import "fmt"
 
+// bilibili.com/video/BV1d54y1q7k7
 func Search() {
 	nums := []int{0, 1, 2, 5, 5, 5, 6, 7, 8}
 	n := len(nums)
