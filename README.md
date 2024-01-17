@@ -16,4 +16,5 @@
 - chtholly tree
 - monotonic stack
 - pre sum
+    - 209, 1124, 1590
 - redblack tree
