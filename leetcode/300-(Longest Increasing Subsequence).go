@@ -4,18 +4,27 @@ import "sort"
 
 func LengthOfLIS(nums []int) int {
 	n := len(nums)
-	f := make([]int, n)
-	res := 0
-	for i, num := range nums {
-		for j, x := range nums[:i] {
-			if x < num {
-				f[i] = max(f[i], f[j])
+
+	memo := make([]int, n)
+	var f func(i int) int
+	f = func(i int) int {
+		if memo[i] > 0 {
+			return memo[i]
+		}
+		for j := i - 1; j >= 0; j-- {
+			if nums[j] < nums[i] {
+				memo[i] = max(memo[i], f(j)+1)
 			}
 		}
-		f[i]++
-		res = max(res, f[i])
+		return memo[i]
 	}
-	return res
+
+	res := 0
+	for i := range nums {
+		res = max(res, f(i))
+	}
+
+	return 1 + res
 }
 
 func LengthOfLIS2(nums []int) int {
