@@ -1,10 +1,10 @@
 ## ALGORITHM
 
 ### folder
-- docs
+- bits
 - graph
 - leetcode
-- pics
+- resources
 - search
 - trees
 - union
@@ -18,3 +18,11 @@
 - pre sum
     - 209, 1124, 1590
 - redblack tree
+
+### Resources
+- [LeetCode](https://leetcode-cn.com/problemset/all/)
+- [LeetCode Rating Plugin](https://github.com/zhang-wangz/LeetCodeRating)
+- [LC Rating](https://huxulm.github.io/lc-rating/)
+- [OI Wiki](https://oi-wiki.org/)
+- LingChaShan
+- codeforces
