@@ -40,5 +40,4 @@ func Heap() {
 	for h.Len() > 0 {
 		fmt.Println(heap.Pop(h))
 	}
-
 }
