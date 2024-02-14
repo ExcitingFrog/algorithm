@@ -15,8 +15,8 @@ func Common() {
 
 }
 
-// foreach
-// func Foreach(msk int) {
+// traversal
+// func Traversal(msk int) {
 // 	for i := range 10 {
 // 		if msk>>i&1 == 1 {
 // 			// contain
