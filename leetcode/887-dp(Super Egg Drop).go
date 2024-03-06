@@ -1,6 +1,6 @@
 package leetcode
 
-func superEggDrop(k int, n int) int {
+func SuperEggDrop(k int, n int) int {
 	// k eggs n height
 	if n == 1 {
 		return 1

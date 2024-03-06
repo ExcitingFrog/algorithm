@@ -2,7 +2,7 @@ package graph
 
 // n cities, m edges
 // edge = [u, v, w]  u, v: city, w: weight
-func floyd(n int, edges [][]int) {
+func Floyd(n int, edges [][]int) {
 	g := make([][]int, n)
 	for i := range g {
 		g[i] = make([]int, n)

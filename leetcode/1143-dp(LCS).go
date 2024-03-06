@@ -1,6 +1,6 @@
 package leetcode
 
-func longestCommonSubsequence(text1 string, text2 string) int {
+func LongestCommonSubsequence(text1 string, text2 string) int {
 	m, n := len(text1), len(text2)
 	dp := make([][]int, m+1)
 	for i := range m + 1 {
