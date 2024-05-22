@@ -25,16 +25,16 @@ func CountPaths(n int, roads [][]int) int {
 	done := make([]bool, n)
 	for {
 		x := -1
-		for i, ok := range done {
+		for i, ok := range done { //found not done and min dis
 			if !ok && (x < 0 || dis[i] < dis[x]) {
 				x = i
 			}
 		}
-		if x == n-1 {
+		if x == n-1 { // return possible paths
 			return f[n-1]
 		}
 		done[x] = true
-		for y, d := range g[x] {
+		for y, d := range g[x] { // y , x->y:d
 			newDis := dis[x] + d
 			if newDis < dis[y] {
 				dis[y] = newDis
