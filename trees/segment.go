@@ -6,7 +6,7 @@ type SegmentTree struct {
 	Nums  []int
 	Trees []int
 }
-
+// Leetcode 307  Range Sum Query - Mutable
 // 下标-二进制-存储区间和-前缀和计算
 // 1 - 0001 - [1,1] - [1,1]
 // 2 - 0010 - [1,2] - [1,2]
